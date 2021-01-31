@@ -24,6 +24,11 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 
 ### Now to test new images we can simply use curl
+
+example input:
+<img src="https://github.com/KiLJ4EdeN/fastapi_tf-keras_example/blob/main/mnist_sample.jpg" width="250" height="250">
+
+
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" -H  "accept: application/json" -H  "Content-Type: multipart/form-data" -F "image=@mnist_sample.jpg;type=image/jpeg"
 ```
@@ -38,11 +43,7 @@ To use swagger refer to http://127.0.0.1:8000/docs
 
 Where the endpoint parameters are shown and we are able to upload new images and test the api.
 
-example input:
-<img src="https://github.com/KiLJ4EdeN/fastapi_tf-keras_example/blob/main/mnist_sample.jpg" width="250" height="250">
-
-
-example output:
+output:
 <img src="https://github.com/KiLJ4EdeN/fastapi_tf-keras_example/blob/main/output.png">
 
 
