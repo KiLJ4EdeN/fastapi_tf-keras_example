@@ -34,7 +34,7 @@ To use swagger refer to http://127.0.0.1:8000/docs
 Where the endpoint parameters are shown and we are able to upload new images and test the api.
 
 example input:
-<img src="https://github.com/KiLJ4EdeN/fastapi_tf-keras_example/blob/main/mnist_sample.jpg" width="350" height="350">
+<img src="https://github.com/KiLJ4EdeN/fastapi_tf-keras_example/blob/main/mnist_sample.jpg" width="250" height="250">
 
 
 example output:
