@@ -15,7 +15,7 @@ chmod +x run.sh
 
 The service should be running on http://127.0.0.1:8000
 
-example output:
+output:
 ```
 INFO:     Started server process [3966300]
 INFO:     Waiting for application startup.
@@ -26,6 +26,11 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ### Now to test new images we can simply use curl
 ```bash
 curl -X POST "http://127.0.0.1:8000/predict" -H  "accept: application/json" -H  "Content-Type: multipart/form-data" -F "image=@mnist_sample.jpg;type=image/jpeg"
+```
+
+output:
+```
+{"label":"5"}
 ```
 
 ### Or the swagger API provided.
