@@ -1,5 +1,5 @@
 # fastapi_tf-keras_example
-Minimal model serving in 24 lines of code using fastapi.
+Minimal Model serving in 24 lines of code using fastapi.
 A model is trained on the mnist dataset and exposed through a service to provide predictions uploaded on images.
 
 
